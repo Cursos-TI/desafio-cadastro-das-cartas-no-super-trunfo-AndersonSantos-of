@@ -2,8 +2,8 @@
 
 int main() {
     
-    printf("\n")
-    printf("Criando as cartas do jogo\n")
+    printf("\n");
+    printf("Criando as cartas do jogo\n");
     printf("\n");
     printf("Montando a carta número 1\n");
     printf("\n");
