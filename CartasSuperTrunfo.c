@@ -2,19 +2,20 @@
 
 int main() {
     
-    printf("\n");
+    printf("\n"); //uso essa função para pula um paragrafo e o codigo ficar mais organizado
     printf("Criando as cartas do jogo\n");
     printf("\n");
     printf("Montando a carta número 1\n");
     printf("\n");
 
+    // aqui eu tô criando a primeira versão das cartas
     char estado;
     char codigo[50];
     char cidade[50];
     int populacao;
     float area;
     float pib;
-    int p_turistico;
+    int p_turistico; // p_turistico = pontos turisticos
 
     printf("Digite o estado da carta com uma letra de A-H: ");
     scanf("%c",&estado);
@@ -42,10 +43,11 @@ int main() {
     printf("O número de pontos turisticos na cidade é: %d\n", p_turistico);
     
     printf("\n");
-    printf("Montando a carta número 2\n");
-    printf("Escolha uma combinação diferente da primeira\n");
+    printf("Montando a carta número 2\n"); // aqui comecei o codigo da segunda carta
+    printf("Escolha uma combinação diferente da primeira\n"); // coloquei essa orientação para evitar erros/confusão
     printf("\n");
-
+    
+    // eu coloquei o 2 no nome das variaveis, em resumo o codigo é o mesmo
     char estado2;
     char codigo2[50];
     char cidade2[50];
