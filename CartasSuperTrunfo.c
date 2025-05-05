@@ -13,8 +13,7 @@ int main() {
     char codigo[50];
     char cidade[50];
     int populacao;
-    float area;
-    float pib;
+    float area, pib, densidade, pib_percapita;// juntando as variaveis para ficar mais resumido o codigo
     int p_turistico; // p_turistico = pontos turisticos
 
     printf("Digite o estado da carta com uma letra de A-H: ");
@@ -33,6 +32,9 @@ int main() {
     scanf("%d",&p_turistico);
     printf("\n");
 
+    // calculando o valor da densidade e pib per capita
+    densidade= populacao/area;
+    pib_percapita= pib/populacao;
     
     printf("O estado da sua carta é: %c\n", estado);
     printf("Seu código é: %c%s\n", estado, codigo);
@@ -52,8 +54,7 @@ int main() {
     char codigo2[50];
     char cidade2[50];
     int populacao2;
-    float area2;
-    float pib2;
+    float area2, pib2, densidade2, pib_percapita2;
     int p_turistico2;
 
     printf("Digite o estado da carta com uma letra de A-H: ");
@@ -71,6 +72,9 @@ int main() {
     printf("Quantos pontos turisticos tem nessa cidade? ");
     scanf("%d",&p_turistico2);
     printf("\n");
+
+    densidade2= populacao2/area2;
+    pib_percapita2= pib2/populacao2;
     
     printf("O estado da sua carta é: %c\n", estado2);
     printf("Seu código é: %c%s\n", estado2, codigo2);
