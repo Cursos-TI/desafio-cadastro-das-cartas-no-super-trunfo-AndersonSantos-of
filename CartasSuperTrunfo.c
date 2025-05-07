@@ -95,7 +95,7 @@ int main() {
     printf("\n");
 
     // aqui iniciei a comparaçao das cartas
-    printf("Comparação dos atributos das cartas");
+    printf("Comparação dos atributos das cartas\n");
     printf("Se for 1(verdadeiro) a carta 1 marca ponto, se for 0(falso) a carta 2 pontua"); //exibi isso para a pessoa fazer a contagenm dos pontos
     printf("\n");
 
