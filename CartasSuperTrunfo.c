@@ -121,5 +121,15 @@ int main() {
     printf("O super poder da carta 1 (%f) é maior que o da carta 2 (%f)? Resultado: %d\n", super_poderC1, super_poderC2,(super_poderC1>super_poderC2));
     printf("\n");
 
+    // adicionando a condição
+    printf("O PIB da cidade 1 é: %f\n", pib);
+    printf("O PIB da cidade 2 é: %f\n", pib2);
+    
+    if (pib>pib2){
+        printf("Cidade 1 venceu\n");
+    }else{
+        printf("Cidade 2 venceu\n");
+    }
+
     return 0;
 }
