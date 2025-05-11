@@ -102,6 +102,7 @@ int main() {
     printf("O super poder da carta 2 é: %f\n", super_poderC2);// exibindo o super poder
     printf("\n");
 
+    // variaveis para o menu switch
     int escolha1, escolha12, escolha2, escolha22;
     float valor1, valor12, valor2, valor22; // para armazenar os valores escolhidos
 
@@ -112,6 +113,7 @@ int main() {
     printf("Digite aqui: ");
     scanf("%d", &escolha1);
 
+    // menu do atributo 1 da carta 1
     switch (escolha1) {
         case 1:
             printf("Você escolheu o atributo população: %d\n", populacao);
@@ -146,8 +148,8 @@ int main() {
 
     printf("Digite aqui: ");
     scanf("%d", &escolha12);
-
     
+    // menu do atributo 2 da carta 1
     switch (escolha12) {
         case 1:
             printf("Você escolheu o atributo população: %d\n", populacao);
@@ -184,7 +186,8 @@ int main() {
     
     printf("Digite aqui: ");
     scanf("%d", &escolha2);
-
+    
+    // menu do atributo 1 da carta 2
     switch (escolha2) {
         case 1:
              printf("Você escolheu o atributo população: %d\n", populacao2);
@@ -219,7 +222,8 @@ int main() {
     
     printf("Digite aqui: ");
     scanf("%d", &escolha22);
-
+    
+    // menu do atributo 2 da carta 2
     switch (escolha22) {
         case 1:
              printf("Você escolheu o atributo população: %d\n", populacao2);
@@ -249,7 +253,7 @@ int main() {
              printf("Opção inválida\n");
     }
 
-    if ((escolha1 == escolha12) || (escolha2==escolha22)){
+    if ((escolha1 == escolha12) || (escolha2==escolha22)){ //verificando se as escolhas são diferentes
         printf("Atributos iguais.\n");
         printf("O atributo de uma carta escolhido na primeira vez não pode ser escolhido na segunda vez pela mesma carta\n");
     }else{
@@ -257,7 +261,7 @@ int main() {
         printf("\nO estado escolhido foi: %c\n", estado);
         printf("O outro estado escolhido foi: %c\n", estado2);
 
-        printf("\nComparando os primeiros atributos escolhidos\n");
+        printf("\nComparando os primeiros atributos escolhidos\n"); // aqui inicia a comparação dos atributos 1
 
         if((valor1==densidade) && (valor2==densidade2)) { // aqui estou verificando se as duas opções escolhidas foram a densidade
             if (valor1<valor2){
@@ -276,7 +280,7 @@ int main() {
         printf("Os dois atributos são iguais!\n");
         }
 
-        printf("Comparando os segundos atributos escolhidos\n");
+        printf("Comparando os segundos atributos escolhidos\n"); // aqui inicia a comparação dos atributos 2
 
         if((valor12==densidade) && (valor22==densidade2)) { // aqui estou verificando se as duas opções escolhidas foram a densidade
             if (valor12<valor22){
@@ -295,7 +299,7 @@ int main() {
         printf("Os dois atributos são iguais!\n");
         }
 
-        float soma1, soma2;
+        float soma1, soma2; // definindo as variaveis da soma
 
         soma1 = valor1 + valor12;
         soma2 = valor2 + valor22;
@@ -303,7 +307,7 @@ int main() {
         printf("\nSoma dos atributos da carta 1: %f\n", soma1);
         printf("Soma dos atributos da carta 2: %f\n", soma2);
 
-
+        // usando o operador ternario pra fazer a soma
         soma1 > soma2 ? printf("Carta 1 venceu!\n") : printf("Carta 2 venceu!\n");
         soma1 == soma2 ? printf("Houve empate") : printf("Sem empate na soma dos atributos");
     }
