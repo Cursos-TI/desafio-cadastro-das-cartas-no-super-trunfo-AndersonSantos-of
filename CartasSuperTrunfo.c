@@ -93,8 +93,9 @@ int main() {
     // definindo mais variaveis
     float super_poderC1,super_poderC2, inverso_densidade, inverso_densidade2;//super_poderC1= super poder da carta 1, o mesmo vale pra C2
 
+    // eu não entendi bem oq seria o inverso da densidade, na matematica o inverso de uma conta é 1 dividido por ela, então fiz isso
     inverso_densidade=1/densidade;
-    inverso_densidade2=1/densidade2;// eu não entendi bem oq seria o inverso da densidade, na matematica o inverso de uma conta é 1 dividido por ela, então fiz isso
+    inverso_densidade2=1/densidade2;
 
     super_poderC1= (float) populacao+area+pib+pib_percapita+p_turistico+inverso_densidade;// somando os super poderes
     super_poderC2= (float) populacao2+area2+pib2+pib_percapita2+p_turistico2+inverso_densidade2;
@@ -254,10 +255,11 @@ int main() {
     }
 
     if ((escolha1 == escolha12) || (escolha2==escolha22)){ //verificando se as escolhas são diferentes
+        // adicionei essa explicação do erro
         printf("Atributos iguais.\n");
         printf("O atributo de uma carta escolhido na primeira vez não pode ser escolhido na segunda vez pela mesma carta\n");
     }else{
-        //  fazendo a comparação dos valores
+        //  mostrando o estado escolhido
         printf("\nO estado escolhido foi: %c\n", estado);
         printf("O outro estado escolhido foi: %c\n", estado2);
 
