@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-
 int main() {
     
+    // tentando lembrar de como salva
     // fiz um pequeno titulo
     printf("\n    CRIANDO AS CARTAS DO JOGO\n");
     printf("\n  Montando a carta número 1\n");
